@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    int product=1;
+    int result=0;
+    while(n>0){
+        int r=n%2;
+        int p=r*product;
+        result+=p;
+        product*=10;
+        n/=2;
+        
+    }
+    cout<<result;
+    return 0;
+}
